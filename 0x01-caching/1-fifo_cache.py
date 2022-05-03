@@ -12,6 +12,7 @@ class FIFOCache(BaseCaching):
         super().__init__()
 
     def put(self, key, item):
+        """This method assigns Item to Key"""
         if key is not None and item is not None:
             self.cache_data[key] = item
 
