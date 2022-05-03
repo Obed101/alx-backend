@@ -17,8 +17,6 @@ class LIFOCache(BaseCaching):
         """
         if key is not None and item is not None:
             self.cache_data[key] = item
-            if not len(self.cache_data) > BaseCaching.MAX_ITEMS:
-                copy = key
 
             if len(self.cache_data) > BaseCaching.MAX_ITEMS:
                 copy = list(self.cache_data.keys())
