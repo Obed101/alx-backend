@@ -35,4 +35,4 @@ class LFUCache(BaseCaching):
 
     def least_used(items: list):
         """This returns the least frequent item in list"""
-        return min(set(items), key = items.count)
+        return min(set(items), key=items.count)
