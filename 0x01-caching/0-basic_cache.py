@@ -9,7 +9,7 @@ class BasicCache(BaseCaching):
     def __init__(self):
         """Instance Initialiser"""
         super().__init__()
-    
+
     def put(self, key, item):
         """This calls the super put to assign Item value to Key"""
         if key is not None and item is not None:
