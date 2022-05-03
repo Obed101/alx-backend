@@ -4,11 +4,11 @@ to make it easily accessible. This folder utilises Caching Algorithms
 
 ## TOPICS
 - What a caching system is
-- What FIFO means
-- What LIFO means
-- What LRU means
-- What MRU means
-- What LFU means
+- What FIFO means and how it's implemented
+- What LIFO means and how it's implemented
+- What LRU means and how it's implemented
+- What MRU means and how it's implemented
+- What LFU means and how it's implemented
 - What is the purpose of a caching system
 - What limits a caching system have
 
