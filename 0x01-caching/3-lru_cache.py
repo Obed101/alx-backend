@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """This module implements LRU caching"""
 
-from asyncio import to_thread
 from base_caching import BaseCaching
 
 
