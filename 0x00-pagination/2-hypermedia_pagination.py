@@ -68,13 +68,3 @@ class Server:
         hyper["total_pages"] = total_pages
 
         return hyper
-
-server = Server()
-
-print(server.get_hyper(1, 2))
-print("---")
-print(server.get_hyper(2, 2))
-print("---")
-print(server.get_hyper(100, 3))
-print("---")
-print(server.get_hyper(3000, 100))
