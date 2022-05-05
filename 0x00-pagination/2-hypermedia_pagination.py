@@ -57,7 +57,7 @@ class Server:
         data = self.get_page(page, page_size)
         next_page = page + 1 if page + 1 else None
         prev_page = page - 1 if page > 1 else None
-        total_pages = int(len(self.dataset()) / page_size)
+        total_pages = len(self.dataset()) / page_size
         print(total_pages)
 
         hyper["page_size"] = pg_size
@@ -65,6 +65,6 @@ class Server:
         hyper["data"] = data
         hyper["next_page"] = next_page
         hyper["prev_page"] = prev_page
-        hyper["total_pages"] = total_pages
+        hyper["total_pages"] = math.ceil(total_pages)
 
         return hyper
