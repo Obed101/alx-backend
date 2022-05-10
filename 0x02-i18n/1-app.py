@@ -15,11 +15,6 @@ def index():
     """Returns the home page"""
     return render_template("0-index.html")
 
-@babel.localeselector
-@app.route('/locale')
-def get_locale():
-    return request.accept_languages.best_match(app.config['LANGUAGES'])
-
 
 if __name__ == '__main__':
     app.run()
