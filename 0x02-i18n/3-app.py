@@ -13,7 +13,7 @@ app.config['BABEL_DEFAULT_LOCALE'] = 'en'
 @app.route('/')
 def index() -> str:
     """Returns the home page"""
-    return render_template("2-index.html")
+    return render_template("3-index.html")
 
 
 @babel.localeselector
