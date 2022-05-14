@@ -21,7 +21,7 @@ users = {
 @app.route('/')
 def index() -> str:
     """Returns the home page"""
-    return render_template("5-index.html")
+    return render_template("6-index.html")
 
 
 @babel.localeselector
