@@ -34,7 +34,7 @@ def get_locale() -> str:
 def get_user():
     """Returns a user dictionary or none"""
     user = request.args.get('login_as')
-    return users.get(user)
+    return users.get(int(user)) if user else None
 
 @app.before_request
 def before_request():
