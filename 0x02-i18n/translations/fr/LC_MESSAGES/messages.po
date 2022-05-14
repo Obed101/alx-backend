@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-05-10 16:48+0000\n"
-"PO-Revision-Date: 2022-05-10 16:48+0000\n"
+"POT-Creation-Date: 2022-05-14 08:12+0000\n"
+"PO-Revision-Date: 2022-05-14 08:12+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -18,3 +18,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.1\n"
 
+# Works in templates/5-index.html. Displays these:
+
+msgid "home_title"
+msgstr "Bienvenue chez Holberton"
+
+msgid "home_header"
+msgstr "Bonjour monde!"
+
+msgid "logged_in_as"
+msgstr "Vous êtes connecté en tant que %(username)s."
+
+msgid "not_logged_in"
+msgstr "Vous n'êtes pas connecté."
