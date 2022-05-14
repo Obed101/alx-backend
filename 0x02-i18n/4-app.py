@@ -19,7 +19,10 @@ def index() -> str:
 @babel.localeselector
 @app.route('/locale')
 def get_locale() -> str:
-    """Gets the locale"""
+    """Gets the locale and return it"""
+    locale = request.args.get('locale')
+    if locale and locale in app.config['LANGUAGES']:
+        return locale
     return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 
