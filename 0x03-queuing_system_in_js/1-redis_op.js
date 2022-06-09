@@ -6,3 +6,12 @@ async function _reddis () {
   client.on('connect', () => console.log('Redis client connected to the server'));
 }
 _reddis();
+
+function setNewSchool(schoolName, value) {
+  redis.set(schoolName, value);
+	redis.print('message');
+}
+
+function displaySchoolValue (schoolName) {
+  redis.get(schoolName);
+}
