@@ -7,11 +7,11 @@ async function _reddis () {
 }
 _reddis();
 
-function setNewSchool (schoolName, value) {
+function setNewSchool(schoolName, value) {
   redis.set(schoolName, value);
-  redis.print('message');
+	redis.print('message');
 }
 
-function displaySchoolValue (schoolName) {
-  redis.get(schoolName);
+async unction displaySchoolValue (schoolName) {
+  await redis.get(schoolName);
 }

@@ -7,11 +7,8 @@ async function _reddis () {
 }
 _reddis();
 
-function setNewSchool (schoolName, value) {
-  redis.set(schoolName, value);
-  redis.print('message');
-}
-
-function displaySchoolValue (schoolName) {
-  redis.get(schoolName);
+function publishMessage (message, time) {
+  if (time) {
+    console.log(`About to send ${message}`);
+  }
 }
